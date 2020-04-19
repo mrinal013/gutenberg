@@ -33,7 +33,7 @@ function gutenberg_mrinal_register_block() {
     wp_register_script( 
         'gutenberg-mrinal',
         plugins_url( 'block.js', __FILE__ ),
-        array( 'wp-blocks', 'wp-element', 'wp-i18n' ),
+        array( 'wp-blocks', 'wp-element', 'wp-editor', 'wp-i18n' ),
         filemtime( plugin_dir_path( __FILE__ ) . 'block.js' )
     );
 
